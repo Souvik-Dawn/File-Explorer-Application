@@ -1,0 +1,113 @@
+Low Level Design:
+----------------
+1) Components and Classes:
+ FileSystem:
+    Responsibilities: Handle directory and file operations.
+ Attributes:
+ currentPath: Current working directory.
+Methods:
+listFiles(): Lists files in the current directory.
+changeDirectory(cd /path/to/directory): Changes the current directory.
+createFile(touch filename): Creates a new file.
+deleteFile(rm filename): Deletes a file.
+copyFile(cp file1.txt newfile.txt,cp file1.txt /path/to/destination/): Copies a file.
+moveFile(mv source_file destination): Moves a file.
+searchFile(find /path/to/search -name "filename"): Searches for a file in the current directory.
+setPermissions(chmod [options] mode file): Sets file permissions.
+777: Read, write, and execute for everyone.
+755: Read, write, and execute for the owner; read and execute for group and others.
+644: Read and write for the owner; read-only for group and others.
+2) CommandParser:
+Responsibilities: Parse user input and execute corresponding commands.
+Attributes:
+commands: List of available commands.
+Methods:
+parseCommand(const std::string& input): Parses user input and returns the corresponding action.
+executeCommand(./filename): Executes the command.
+3) FileExplorer:
+Responsibilities: Interface between the user and FileSystem.
+Attributes:
+fileSystem: Instance of FileSystem.
+commandParser: Instance of CommandParser.
+Methods:
+run(): Main loop for interacting with the user.
+displayPrompt(): Displays the command prompt.
+handleUserInput(grep "handleUserInput" path/to/file.cpp): Handles user input and invokes corresponding methods on CommandParser.
+
+Low Level Diagrams:
+------------------
+
+Class Diagram:
+--------------
++---------------------+
+|     FileSystem      |
++---------------------+
+| - currentPath: std::string  |
++---------------------+
+| + listFiles(): void |
+| + changeDirectory(path: std::string): void |
+| + createFile(filename: std::string): void |
+| + deleteFile(filename: std::string): void |
+| + copyFile(src: std::string, dest: std::string): void |
+| + moveFile(src: std::string, dest: std::string): void |
+| + searchFile(filename: std::string): void |
+| + setPermissions(filename: std::string, mode: mode_t): void |
++---------------------+
+
++---------------------+
+|   CommandParser     |
++---------------------+
+| - commands: std::map<std::string, std::function<void(std::vector<std::string>)>> |
++---------------------+
+| + parseCommand(input: std::string): std::string |
+| + executeCommand(command: std::string, args: std::vector<std::string>): void |
++---------------------+
+
++---------------------+
+|    FileExplorer     |
++---------------------+
+| - fileSystem: FileSystem |
+| - commandParser: CommandParser |
++---------------------+
+| + run(): void       |
+| + displayPrompt(): void |
+| + handleUserInput(input: std::string): void |
++---------------------+
+
+Activity Diagram
+----------------
+
+  +-----------------+
+  | Start           |
+  +-----------------+
+           |
+           v
+  +-----------------+
+  | Display Prompt  |
+  +-----------------+
+           |
+           v
+  +-----------------+
+  | Get User Input  |
+  +-----------------+
+           |
+           v
+  +-----------------------------+
+  | Parse Command               |
+  +-----------------------------+
+           |
+           v
+  +------------------------------+
+  | Execute Command              |
+  +------------------------------+
+           |
+           v
+  +-----------------+
+  | Display Results |
+  +-----------------+
+           |
+           v
+  +-----------------+
+  | End or Repeat   |
+  +-----------------+
+
