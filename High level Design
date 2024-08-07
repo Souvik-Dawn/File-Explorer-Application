@@ -1,0 +1,64 @@
+File Explorer Application:
+-------------------------
+High Level Design:
+-----------------
+Part 1(Components):
+1) Main Application-This is the entry point of our application.It intializes the environment and controls the flow 
+   between diffrent modules.
+2) Directory Module-It handles operations related to directories such as listing , navigating and managing directory 
+   content.
+3) File Module-It handles operations related to file such as creating , copying , moving , deleting and reading files.
+
+4) Navigation Module-It manages the user's current location within the file system and handles navigation commands.
+
+5) Search Module-This module implements functionality to search for files and directories based on user input.
+
+6) Permission Module-It manages file and directory permissions.
+
+7) Ui Module-Provides a console-based interface for user interaction.
+
+Part 2(Diagram):
+	     
+
++----------------------------------------+
+|           Main Application             |
++----------------------------------------+
+                  |
+                  v
++----------------------------------------+
+|            Directory Module            |
+|  - List directories                    |
+|  - Navigate directories                |
++----------------------------------------+
+                  |
+                  v
++----------------------------------------+
+|              File Module               |
+|  - Create, Copy, Move, Delete files    |
++----------------------------------------+
+                  |
+                  v
++----------------------------------------+
+|            Navigation Module           |
+|  - Track current directory             |
+|  - Change directory                    |
++----------------------------------------+
+                  |
+                  v
++----------------------------------------+
+|             Search Module              |
+|  - Search files and directories        |
++----------------------------------------+
+                  |
+                  v
++----------------------------------------+
+|           Permission Module            |
+|  - Manage file permissions             |
++----------------------------------------+
+                  |
+                  v
++----------------------------------------+
+|               UI Module                |
+|  - Display file explorer               |
+|  - User input handling                 |
++----------------------------------------+
