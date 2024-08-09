@@ -1,0 +1,34 @@
+FileExplorer> list
+src
+include
+FileExplorer
+fileexplorer.log
+FileExplorer> create Praneeth.txt
+File created: Praneeth.txt
+FileExplorer> create Souvik.txt
+File created: Souvik.txt
+FileExplorer> create Dhanashri.txt
+File created: Dhanashri.txt
+FileExplorer> copy Praneeth.txt newfile.txt
+File copied from Praneeth.txt to newfile.txt
+FileExplorer> create testfile.txt
+File created: testfile.txt
+FileExplorer> move Souvik.txt testfile.txt
+File moved from Souvik.txt to testfile.txt
+FileExplorer> search    
+Enter filename to search: Dhanashri.txt
+Found: ./Dhanashri.txt
+FileExplorer> chmod             
+Enter filename: Praneeth.txt
+Enter mode (e.g., 755): 777
+Changed permissions for Praneeth.txt to 777
+FileExplorer> delete newfile.txt
+File deleted: newfile.txt
+FileExplorer> cd src
+Enter directory: src
+Changed directory to src
+FileExplorer> list
+main.cpp
+Logger.cpp
+file_explorer.cpp
+FileExplorer> cd ..
