@@ -1,0 +1,67 @@
+File Explorer application started
+Created file: example.txt
+Copied file: example.txt to example_copy.txt
+Moved file: example_copy.txt to example_moved.txt
+Deleted file: example_moved.txt
+Searched for file: example.txt
+Set permissions for file: example.txt
+File Explorer application started
+Created file: example.txt
+Copied file: example.txt to example_copy.txt
+Moved file: example_copy.txt to example_moved.txt
+Deleted file: example_moved.txt
+Searched for file: example.txt
+Set permissions for file: example.txt
+File Explorer application started
+Listed files in the current directory
+File Explorer application started
+Listed files in the current directory
+File Explorer application started
+Listed files in the current directory
+[2024-08-08 19:53:39] File Explorer application started
+[2024-08-08 19:54:34] Listed files in the current directory
+[2024-08-08 20:04:31] File Explorer application started
+[2024-08-08 20:04:35] Listed files in the current directory
+[2024-08-08 20:04:44] Created file: newfile.txt
+[2024-08-08 20:05:52] Listed files in the current directory
+[2024-08-08 20:08:34] Copied file from newfile.txt to copy_of_newfile.txt
+[2024-08-08 20:09:13] Listed files in the current directory
+[2024-08-08 20:10:52] Moved file from copy_of_newfile.txt to movedfile.txt
+[2024-08-08 20:10:57] Listed files in the current directory
+[2024-08-08 20:12:27] Deleted file: subfile2.txt
+[2024-08-08 20:12:30] Listed files in the current directory
+[2024-08-08 20:12:50] Exiting application
+[2024-08-08 20:20:27] File Explorer application started
+[2024-08-08 20:20:35] Listed files in the current directory
+[2024-08-08 20:21:06] Searched for file: newfile.txt
+[2024-08-08 20:21:34] Searched for file: movedfile.txt
+[2024-08-08 20:23:35] Changed permissions for file: subfile1.txt to 777
+[2024-08-08 20:26:30] Created file: souvik.txt
+[2024-08-08 20:36:08] Exiting application
+[2024-08-08 20:45:31] File Explorer application started
+[2024-08-08 20:45:34] Listed files in the current directory
+[2024-08-08 20:45:54] Created file: Dhanashree.txt
+[2024-08-08 20:46:01] Listed files in the current directory
+[2024-08-08 20:49:04] Copied file from souvik.txt to newfile1.txt
+[2024-08-08 20:49:08] Listed files in the current directory
+[2024-08-08 20:50:22] Moved file from newfile1.txt to souvik.txt
+[2024-08-08 20:50:41] Listed files in the current directory
+[2024-08-08 20:50:53] Deleted file: newfile.txt
+[2024-08-08 20:51:29] Searched for file: Dhanashree.txt
+[2024-08-08 20:52:18] Changed directory to directory2
+[2024-08-08 20:53:40] File Explorer application started
+[2024-08-08 20:53:44] Listed files in the current directory
+[2024-08-08 20:53:58] Changed permissions for file: souvik.txt to 777
+[2024-08-08 20:55:16] Changed permissions for file: subfile1.txt to 766
+[2024-08-08 20:56:58] Exiting application
+[2024-08-09 09:25:54] File Explorer application started
+[2024-08-09 09:25:59] Listed files in the current directory
+[2024-08-09 09:26:23] Exiting application
+[2024-08-09 09:29:47] File Explorer application started
+[2024-08-09 09:29:56] Listed files in the current directory
+[2024-08-09 09:30:18] Exiting application
+[2024-08-09 10:12:20] File Explorer application started
+[2024-08-09 10:12:24] Listed files in the current directory
+[2024-08-09 10:12:47] Created file: Praneeth.txt
+[2024-08-09 10:13:59] Deleted file: Praneeth.txt
+[2024-08-09 10:14:06] Exiting application
