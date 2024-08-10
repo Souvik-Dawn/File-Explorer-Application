@@ -1,0 +1,55 @@
+Creating file: Praneeth.txt
+File created successfully.
+Listing files in directory: /home/rps/FileExplorer
+Copying file from Praneeth.txt to Bittu.txt
+File copied successfully.
+Listing files in directory: /home/rps/FileExplorer
+Creating file: dhanashri1.txt
+File created successfully.
+Creating file: souvik1.txt
+File created successfully.
+Copying file from dhanashri1.txt to newtest.txt
+File copied successfully.
+Moving file from dhanashri1.txt to todattest.txt
+File moved successfully.
+Deleting file: todattest.txt
+File deleted successfully.
+Searching for file: souvik1.txt
+File found: ./souvik1.txt
+Setting permissions for file: souvik1.txt
+Permissions set successfully.
+Listing files in directory: /home/rps/FileExplorer
+Listing files in directory: /home/rps/FileExplorer
+Listing files in directory: /home/rps/FileExplorer/src
+Creating file: Saturday.txt
+File created successfully.
+Listing files in directory: /home/rps/FileExplorer
+Listing files in directory: /home/rps/FileExplorer
+Creating file: Souvik1.txt
+File created successfully.
+Changing directory to: src
+Directory changed successfully.
+Creating file: Praneeth1.txt
+File created successfully.
+Listing files in directory: /home/rps/FileExplorer/src
+Listing files in directory: /home/rps/FileExplorer
+Copying file from souvik1.txt to testing.txt
+Copy failed: filesystem error: cannot copy: File exists [souvik1.txt] [testing.txt]
+Copying file from souvik1.txt to new_souvik1.txt
+File copied successfully.
+Moving file from Bittu.txt to new_souvik1.txt
+File moved successfully.
+Deleting file: new_souvik1.txt
+File deleted successfully.
+Creating file: Praneeth1.txt
+File created successfully.
+Searching for file: Praneeth.txt
+File found: ./Praneeth.txt
+Searching for file: test.txt
+File found: ./src/test.txt
+Setting permissions for file: Praneeth1.txt
+Permissions set successfully.
+Changing directory to: src
+Directory changed successfully.
+Going up one directory level.
+Directory changed successfully.
